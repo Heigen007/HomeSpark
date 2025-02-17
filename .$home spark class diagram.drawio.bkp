@@ -1,6 +1,6 @@
-<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.7.5 Chrome/114.0.5735.289 Electron/25.8.1 Safari/537.36" modified="2025-02-11T08:38:34.863Z" etag="1Of9GXjpw4yIClZwyMGv" version="21.7.5" type="device">
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.7.5 Chrome/114.0.5735.289 Electron/25.8.1 Safari/537.36" modified="2025-02-10T11:39:08.568Z" version="21.7.5" etag="nNs0EMoSid8CA6mZJMjv" type="device">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="864" dy="766" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2339" pageHeight="3300" math="0" shadow="0">
+    <mxGraphModel dx="851" dy="404" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2339" pageHeight="3300" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -110,8 +110,8 @@
             <mxPoint x="260" y="880" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Ye0k7zOGaGLhEzkEnyvU-45" value="Apartment" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="820" y="520" width="240" height="520" as="geometry" />
+        <mxCell id="Ye0k7zOGaGLhEzkEnyvU-45" value="HouseData" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="690" y="530" width="240" height="380" as="geometry" />
         </mxCell>
         <mxCell id="Ye0k7zOGaGLhEzkEnyvU-46" value="+ link: string" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="Ye0k7zOGaGLhEzkEnyvU-45" vertex="1">
           <mxGeometry y="26" width="240" height="24" as="geometry" />
@@ -145,28 +145,6 @@
         </mxCell>
         <mxCell id="Ye0k7zOGaGLhEzkEnyvU-47" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="Ye0k7zOGaGLhEzkEnyvU-45" vertex="1">
           <mxGeometry y="320" width="240" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="QnJRFg7JmiMRab3aB83o-21" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;+ constructor()&lt;br&gt;+&amp;nbsp;&lt;/span&gt;getAllApartments()&lt;br&gt;+&amp;nbsp;getApartmentById(id: number)&lt;br&gt;+&amp;nbsp;getApartmentByLink(link: string)&lt;br&gt;+&amp;nbsp;generateEmbedding(propmt: string)&lt;br&gt;+&amp;nbsp;getFineTextEmbedding(prompt: string)&lt;br&gt;+&amp;nbsp;getRecommendations(prompt: string)&lt;br&gt;+ getMightLikeApartments(prompt: string)" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="Ye0k7zOGaGLhEzkEnyvU-45">
-          <mxGeometry y="380" width="240" height="140" as="geometry" />
-        </mxCell>
-        <mxCell id="QnJRFg7JmiMRab3aB83o-5" value="User" style="swimlane;fontStyle=2;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="630" y="260" width="220" height="220" as="geometry">
-            <mxRectangle x="230" y="140" width="160" height="26" as="alternateBounds" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="QnJRFg7JmiMRab3aB83o-6" value="- email: string&lt;br&gt;- username: string&lt;br&gt;- password: string" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="QnJRFg7JmiMRab3aB83o-5">
-          <mxGeometry y="26" width="220" height="60" as="geometry" />
-        </mxCell>
-        <object label="" id="QnJRFg7JmiMRab3aB83o-7">
-          <mxCell style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="QnJRFg7JmiMRab3aB83o-5">
-            <mxGeometry y="86" width="220" height="4" as="geometry" />
-          </mxCell>
-        </object>
-        <mxCell id="QnJRFg7JmiMRab3aB83o-8" value="+ constructor()" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="QnJRFg7JmiMRab3aB83o-5">
-          <mxGeometry y="90" width="220" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="QnJRFg7JmiMRab3aB83o-9" value="+ getClient(): Promise&amp;lt;void&amp;gt;&lt;br&gt;+&amp;nbsp;loginUser&lt;span style=&quot;background-color: initial;&quot;&gt;(): Promise&amp;lt;void&amp;gt;&lt;/span&gt;&lt;br&gt;+&amp;nbsp;refreshToken&lt;span style=&quot;background-color: initial;&quot;&gt;(): Promise&amp;lt;void&amp;gt;&lt;/span&gt;&lt;br&gt;+&amp;nbsp;loginWithGoogle(): Promise&amp;lt;void&amp;gt;&lt;br&gt;+&amp;nbsp;getUserInfo(): Promise&amp;lt;void&amp;gt;&lt;br&gt;+&amp;nbsp;updateUser&lt;span style=&quot;background-color: initial;&quot;&gt;(): Promise&amp;lt;void&amp;gt;&lt;/span&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;labelPosition=center;verticalLabelPosition=middle;" vertex="1" parent="QnJRFg7JmiMRab3aB83o-5">
-          <mxGeometry y="120" width="220" height="100" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
