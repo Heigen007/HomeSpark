@@ -3,12 +3,6 @@ import openai from "../openai";
 import pinecone from "../pinecone";
 
 let { GoogleGenerativeAIEmbeddings } = require("@langchain/google-genai");
-const LangchainOpenAI = require("@langchain/openai").OpenAI;
-let { loadQAStuffChain } = require("langchain/chains");
-let { Document } = require("langchain/document");
-const embeddings = new GoogleGenerativeAIEmbeddings({
-    model: "embedding-001", // 768 dimensions
-});
 
 const indexName = 'homespark2';
 const index = pinecone.index(indexName);
