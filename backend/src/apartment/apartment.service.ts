@@ -291,6 +291,8 @@ class ApartmentService {
 
     async getRecommendations(prompt: string, classify: string, minPrice: number, maxPrice: number, rooms: string): Promise<any[]> {
         let finePrompt = await this.getFineTextEmbedding(prompt, rooms);
+        console.log('Fine prompt:', finePrompt);
+        
         let minRooms = 1
         let maxRooms = 100
         console.log(rooms)
@@ -354,7 +356,9 @@ class ApartmentService {
                     stream: false
                 });
         let messageContent = response.choices[0]?.message?.content || null;
-        console.log('Received message content:', messageContent);
+        console.log();
+        
+        console.log('response.choices[0]', response.choices[0]);
 
         if (!messageContent) {
             throw new Error('No content received from OpenAI');

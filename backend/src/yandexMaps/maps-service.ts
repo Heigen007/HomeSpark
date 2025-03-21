@@ -51,14 +51,11 @@ class MapsService {
 
         // return JSON.parse(messageContent);
         return messageContent.trim()
-    
     }
 
     async geocode(address: string): Promise<any> {
         const query = encodeURIComponent(address.replace(';', '').trim());
-          const ll = "76.9495,43.2295";
-          const spn = "0.4216,0.2869";
-          const response = await fetch(`https://geocode-maps.yandex.ru/1.x/?apikey=${process.env.YANDEX_API_KEY}&geocode=${query}&format=json&&ll=${ll}&spn=${spn}lang=ru_RU&bbox=76.77732,43.35107~77.07236,43.17431`);
+          const response = await fetch(`https://geocode-maps.yandex.ru/1.x/?apikey=${process.env.YANDEX_API_KEY}&geocode=${query}&format=json`);
           const data = await response.json();
           return data;
     }
@@ -66,7 +63,6 @@ class MapsService {
     async geocodeNotReadable(address: string, characteristics: { [key: string]: string }): Promise<any> {
         const newAddressResponse = await this.createReadableAddress(address, characteristics);
         console.log('New address response:', newAddressResponse);
-        
         // Parse the JSON string to get the newAddress value
         const newAddress = JSON.parse(newAddressResponse).newAddress;
         console.log('Parsed new address:', newAddress);
