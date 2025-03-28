@@ -27,7 +27,7 @@ class AuthService {
         return newUser;
     }
 
-    async loginUser(email: string, password: string): Promise<{ user: any, accessToken: string, refreshToken: string } | null> {
+    async loginUser(email: string, password: string): Promise<{ user: any, accessToken: string, refreshToken: string, tokenBalance: number } | null> {
         const user = await prisma.user.findUnique({ where: { email } });
         if (!user) return null;
 
@@ -41,10 +41,11 @@ class AuthService {
             data: {
                 token: refreshToken,
                 userId: user.id,
+                
             },
         });
 
-        return { user, accessToken, refreshToken };
+        return { user, accessToken, refreshToken, tokenBalance: user.tokenBalance || 0 };
     }
 
     private generateJwt(user: any): string {

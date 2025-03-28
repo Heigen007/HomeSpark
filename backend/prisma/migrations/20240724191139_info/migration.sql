@@ -6,4 +6,5 @@ ALTER TABLE "User" ADD COLUMN     "age" INTEGER,
 ADD COLUMN     "name" TEXT,
 ADD COLUMN     "phoneNumber" TEXT,
 ADD COLUMN     "smallDescription" TEXT,
-ADD COLUMN     "surname" TEXT;
+ADD COLUMN     "surname" TEXT,
+ADD COLUMN     "tokenBalance" INTEGER DEFAULT 0;

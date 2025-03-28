@@ -13,10 +13,6 @@ apartmentRouter.get('/type/rent', apartmentController.getRentApartments);
 apartmentRouter.get('/type/daily', apartmentController.getDailyApartments);
 apartmentRouter.post('/find/link', apartmentController.getApartmentByLink);
 
-// apartmentRouter.get('/recommendations/:type', apartmentController.getRecommendations);
-// apartmentRouter.get('/lc/emdedded', apartmentController.generateEmbedding)
-// apartmentRouter.get('/lc/cool', apartmentController.getFineTextEmbedding)
-
 apartmentRouter.post('/lc/reccomendation', apartmentController.getRecommendation)
 apartmentRouter.post('/lc/mightlike', apartmentController.getMightLike)
 

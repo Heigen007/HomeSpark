@@ -12,7 +12,7 @@ class UserService{
         if (!user) return null;
         return { id:user.id, email: user.email, name: user.name, surname: user.surname, phoneNumber: user.phoneNumber, 
             smallDescription: user.smallDescription,
-            age: user.age };
+            age: user.age, tokenBalance: user.tokenBalance};
     }
 
     async updateUser(userId: number, user: User): Promise<any | null> {
